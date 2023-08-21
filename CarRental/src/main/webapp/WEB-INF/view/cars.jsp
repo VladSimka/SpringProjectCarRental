@@ -18,7 +18,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="<c:url value="/resources/images/favicon-32x32.png"></c:url>">
     <link rel="icon" type="image/png" sizes="16x16" href="<c:url value="/resources/images/favicon-16x16.png"></c:url>">
     <link rel="manifest" href="<c:url value="/resources/webmanifest/site.webmanifest"></c:url>">
-
 </head>
 <body>
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -38,9 +37,8 @@
     </symbol>
 </svg>
 
-
-<!-- HEADER-->
-<nav style="margin-bottom: 0" class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+<!--HEADER-->
+<nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
     <div class="container">
         <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
             <div class="offcanvas-body">
@@ -54,157 +52,19 @@
                     <li class="nav-item"><a class="nav-link" href="/terms">Условия проката</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Акции</a></li>
                     <li class="nav-item"><a class="nav-link" href="/contacts">Контакты</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/cars">Автопарк</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Автопарк</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </nav>
-<!--HEADER ENDS-->
-
-<div style=margin-top:0;background-image:url("<c:url value="/resources/images/main-warp.jpg"></c:url>");>
-    <div class=" p-3 p-md-5 text-center" style=margin-top:0px>
-        <div class="col-md-6 p-lg-5 mx-auto" style=margin-top:0>
-            <h1 class="display-3 fw-bold" style="color: aliceblue">Прокат авто</h1>
-            <h3 class="fw-normal  mb-3" style="color: aliceblue">Цены от 20 рублей, более 2000 довольных
-                клиентов</h3>
-        </div>
-    </div>
-</div>
-
-<!--BONUSES-->
-<div class="container px-4 py-5" id="featured-3">
-    <h2 align="center" class="pb-2 border-bottom justify-content-center">Наши отличия - Ваши выгоды</h2>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-        <div class="feature col" align="center">
-            <img width="150" height="150" src="<c:url value="/resources/images/discount.png"></c:url>">
-            <h4 class="text-body-emphasis" align="center">Скидки за повторное обращение</h4>
-            <p align="center" font-size="15px">Каждый клиент, который обратился к нам автоматически становится
-                участником бонусной программы</p>
-        </div>
-
-        <div class="feature col" align="center">
-            <img width="150" height="150" src="<c:url value="/resources/images/good-car.png"></c:url>"
-                 alt="Моя картинка">
-            <h4 class="text-body-emphasis" align="center">Без ограничения пробега</h4>
-            <p align="center" font-size="15px">Катайся на автомобиле, скололько угодно.<br> Никаких дополинтельных оплат
-                за перепробег</p>
-        </div>
-
-        <div class="feature col" align="center">
-            <img width="150" height="150" src="<c:url value="/resources/images/trip.png"></c:url>"
-                 alt="Моя картинка">
-            <h4 class="text-body-emphasis" align="center">Гарантия самой низкой цены</h4>
-            <p align="center" font-size="15px">Если вы найдете цену на аналогичный автомобиль в другом прокате ниже - мы
-                сделаем еще дешевле!</p>
-        </div>
-    </div>
-</div>
 
 
-<div class="container">
-    <hr>
-    <br>
-    <br>
-    <h1 align="center">Спецпредложения</h1>
-    <br>
-    <br>
-</div>
+<c:forEach var="cars" items="${allCars}">
+    ${cars.brand}
+</c:forEach>
 
-<!-- CAROUSEL-->
-<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"
-                aria-current="true"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-    </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="<c:url value="/resources/images/carousel1.jpg"></c:url>">
-            <div class="container">
-                <div class="carousel-caption text-start">
-                    <h1>Мойка авто в подарок при прокате от 3х суток</h1>
-                </div>
-            </div>
-        </div>
-
-        <div class="carousel-item">
-            <img src="<c:url value="/resources/images/carousel2.jpg"></c:url>">
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>Возможен выезд за пределы РБ</h1>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="<c:url value="/resources/images/carousel3.jpg"></c:url> ">
-            <div class="container">
-                <div class="carousel-caption text-end">
-                    <h1>Онлайн оформление договора и доставка авто по адресу.</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
-
-<!--COMMENTS-->
-<div class="container" align="center">
-    <br>
-    <br>
-    <h1>Отзывы</h1>
-    <br>
-    <div class="container marketing">
-        <div class="row">
-            <div class="col-lg-4">
-                <img class="rounded-circle" src="<c:url value="/resources/images/comments1.jpg"></c:url> ">
-                <h2 class="fw-normal">Владислав Симоненко</h2>
-                <p>"Удобно и выгодно, когда своя машина на ремонте.
-                    Персонал приветливый. В дороге никаких
-                    казусов не произошло, хоть и накрутил порядка 3000 км.Буду обращаться и дальше."
-                </p>
-            </div><!-- /.col-lg-4 -->
-
-            <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
-                     preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                </svg>
-                <h2 class="fw-normal">Heading</h2>
-                <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second
-                    column.</p>
-            </div><!-- /.col-lg-4 -->
-
-            <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
-                     preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                </svg>
-                <h2 class="fw-normal">Heading</h2>
-                <p>And lastly this, the third column of representative placeholder content.</p>
-            </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-    </div>
-</div>
-
-
-<div class="container">
-    <hr>
-    <h1 align="center"> Аренда авто без залога и стажа вождения – Auto.by</h1>
-    <br>
-</div>
-
-<!-- FOOTER-->
+<!--FOOTER-->
 <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">

@@ -12,6 +12,12 @@
             integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="<c:url value="/resources/css/style.css"></c:url>">
+
+    <!--FAVICONS-->
+    <link rel="apple-touch-icon" sizes="180x180" href="<c:url value="/resources/images/apple-touch-icon.png"></c:url>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<c:url value="/resources/images/favicon-32x32.png"></c:url>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<c:url value="/resources/images/favicon-16x16.png"></c:url>">
+    <link rel="manifest" href="<c:url value="/resources/webmanifest/site.webmanifest"></c:url>">
 </head>
 <body>
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -32,18 +38,28 @@
 </svg>
 
 <!--HEADER-->
-<div class="container bg-dark">
-    <header class="d-flex justify-content-center py-3 ">
-        <ul class="nav nav-pills">
-            <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Главная</a></li>
-            <li class="nav-item"><a href="/terms" class="nav-link">Условия проката</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Акции</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Автопарк</a></li>
-        </ul>
-    </header>
-</div>
+<nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+    <div class="container">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
+            <div class="offcanvas-body">
+                <ul class="navbar-nav flex-grow-1 justify-content-between">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">
+                            <img height="30" width="100" src="<c:url value="/resources/images/logo.png"></c:url>">
+                        </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/terms">Условия проката</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Акции</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contacts">Контакты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/cars">Автопарк</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
 
+<br>
 <div class="container">
     <h1>Условия проката</h1>
 </div>
@@ -51,7 +67,7 @@
 <br>
 <div class="container">
     <div class="dropdown" style="background-color:aliceblue">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
            data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 30px; width: 100%">
             Документы
         </a>
@@ -66,7 +82,7 @@
 <br>
 <div class="container">
     <div class="dropdown" style="background-color:aliceblue">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
            data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 30px; width: 100%">
             Выдача и возврат автомобиля
         </a>
@@ -74,8 +90,12 @@
             <li>1. Выдача автомобиля при первоначальном обращении осуществляется в офисе компании с 8.00 до 20.00.</li>
             <li>2. Постоянным клиентам можно заказывать услугу авто к подъезду.</li>
             <li>3. Возврат авто осуществляется в офисе компании в рабочее время с 8.00 до 20.00</li>
-            <li>4. Возврат автомобиля осуществляется в то время, когда он был выдан, увеличенное на количество суток. Если Вы сдали авто ранее, то каждые неполные сутки считаются как за полные.</li>
-            <li>5. Возврат автомобиля допускается с опозданием до 30 минут, впоследствии за каждый час просрочки взимается плата 10% максимальной суточной стоимости проката за за данный автомобиль.</li>
+            <li>4. Возврат автомобиля осуществляется в то время, когда он был выдан, увеличенное на количество суток.
+                Если Вы сдали авто ранее, то каждые неполные сутки считаются как за полные.
+            </li>
+            <li>5. Возврат автомобиля допускается с опозданием до 30 минут, впоследствии за каждый час просрочки
+                взимается плата 10% максимальной суточной стоимости проката за за данный автомобиль.
+            </li>
         </ul>
     </div>
 </div>
@@ -84,7 +104,7 @@
 <br>
 <div class="container">
     <div class="dropdown" style="background-color:aliceblue">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
            data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 30px; width: 100%">
             Условия оплаты
         </a>
@@ -99,13 +119,21 @@
 <br>
 <div class="container">
     <div class="dropdown" style="background-color:aliceblue">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
            data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 30px; width: 100%">
             Ваша ответственность при ДТП
         </a>
         <ul class="dropdown-menu" style=" font-size:22px;width: 100%">
-            <li>1. Во всех случаях ДТП (когда вы виновник или вы пострадавший) вы не несете ответственность, только за время простоя автомобиля, когда он будет находиться в ремонте, а также за ущерб, не покрытый страховой компанией (но как правило, таких случаев не бывало). Основной вашей обязанностью является сообщить в компанию о случае и засвидетельствовать факт ДТП в ГАИ. В случае, если Вы скроетесь с места происшествия Вы рискуете лишиться прав, а также несете полную материальную ответственность за ущерб нанесенный автомобилю.</li>
-            <li>2. Вы несете 100% ущерба за нанесенный ущерб автомобилю, если во время происшествия вы находились в состоянии алкогольного, токсического или наркотического опьянения.</li>
+            <li>1. Во всех случаях ДТП (когда вы виновник или вы пострадавший) вы не несете ответственность, только за
+                время простоя автомобиля, когда он будет находиться в ремонте, а также за ущерб, не покрытый страховой
+                компанией (но как правило, таких случаев не бывало). Основной вашей обязанностью является сообщить в
+                компанию о случае и засвидетельствовать факт ДТП в ГАИ. В случае, если Вы скроетесь с места происшествия
+                Вы рискуете лишиться прав, а также несете полную материальную ответственность за ущерб нанесенный
+                автомобилю.
+            </li>
+            <li>2. Вы несете 100% ущерба за нанесенный ущерб автомобилю, если во время происшествия вы находились в
+                состоянии алкогольного, токсического или наркотического опьянения.
+            </li>
         </ul>
     </div>
 </div>
@@ -114,13 +142,18 @@
 <br>
 <div class="container">
     <div class="dropdown" style="background-color:aliceblue">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
            data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 30px; width: 100%">
             Дополнительно
         </a>
         <ul class="dropdown-menu" style=" font-size:22px;width: 100%">
-            <li>1. ТС предоставляется Арендатору для эксплуатации по дорогам общего пользования, имеющим твердое дорожное покрытие (асфальт, бетон).</li>
-            <li>2. ТС предоставляется в аренду в технически исправном состоянии, что подтверждается сертификатом технического осмотра и в чистом виде. Все наши автомобили укомплектованы знаком аварийной остановки, аптечкой, огнетушителем, запасным колесом, домкратом, баллонным ключом, автомагнитолой.</li>
+            <li>1. ТС предоставляется Арендатору для эксплуатации по дорогам общего пользования, имеющим твердое
+                дорожное покрытие (асфальт, бетон).
+            </li>
+            <li>2. ТС предоставляется в аренду в технически исправном состоянии, что подтверждается сертификатом
+                технического осмотра и в чистом виде. Все наши автомобили укомплектованы знаком аварийной остановки,
+                аптечкой, огнетушителем, запасным колесом, домкратом, баллонным ключом, автомагнитолой.
+            </li>
         </ul>
     </div>
 </div>
@@ -134,9 +167,7 @@
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                <svg class="bi" width="30" height="24">
-                    <use xlink:href="#bootstrap"></use>
-                </svg>
+                <img class="bi" width="30" height="24" src="<c:url value="/resources/images/favicon-32x32.png"></c:url> ">
             </a>
             <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
         </div>
@@ -147,7 +178,7 @@
                     <use xlink:href="#twitter"></use>
                 </svg>
             </a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#">
+            <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/vlad_simonenko_27/">
                 <svg class="bi" width="24" height="24">
                     <use xlink:href="#instagram"></use>
                 </svg>

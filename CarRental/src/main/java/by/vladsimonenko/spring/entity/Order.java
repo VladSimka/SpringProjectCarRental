@@ -1,11 +1,13 @@
 package by.vladsimonenko.spring.entity;
 
 public class Order {
-    private int orderId;
-    private Client customer;
+    private int id;
+    private int clientId;
     private int hours;
-    private Car car;
+    private int carId;
     private double price;
+
+    boolean accepted;
 
 
 }

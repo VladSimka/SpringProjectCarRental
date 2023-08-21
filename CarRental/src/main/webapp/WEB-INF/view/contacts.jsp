@@ -13,6 +13,7 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="<c:url value="/resources/css/style.css"></c:url>">
 
+
     <!--FAVICONS-->
     <link rel="apple-touch-icon" sizes="180x180" href="<c:url value="/resources/images/apple-touch-icon.png"></c:url>">
     <link rel="icon" type="image/png" sizes="32x32" href="<c:url value="/resources/images/favicon-32x32.png"></c:url>">
@@ -52,7 +53,7 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="/">Главная</a></li>
                     <li class="nav-item"><a class="nav-link" href="/terms">Условия проката</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Акции</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Акции</a></li>
                     <li class="nav-item"><a class="nav-link" href="/contacts">Контакты</a></li>
                     <li class="nav-item"><a class="nav-link" href="/cars">Автопарк</a></li>
                 </ul>
@@ -61,148 +62,70 @@
     </div>
 </nav>
 <!--HEADER ENDS-->
-
-<div style=margin-top:0;background-image:url("<c:url value="/resources/images/main-warp.jpg"></c:url>");>
-    <div class=" p-3 p-md-5 text-center" style=margin-top:0px>
-        <div class="col-md-6 p-lg-5 mx-auto" style=margin-top:0>
-            <h1 class="display-3 fw-bold" style="color: aliceblue">Прокат авто</h1>
-            <h3 class="fw-normal  mb-3" style="color: aliceblue">Цены от 20 рублей, более 2000 довольных
-                клиентов</h3>
-        </div>
-    </div>
+<br>
+<div class="container">
+    <h1 align="left">Контакты</h1>
 </div>
-
-<!--BONUSES-->
-<div class="container px-4 py-5" id="featured-3">
-    <h2 align="center" class="pb-2 border-bottom justify-content-center">Наши отличия - Ваши выгоды</h2>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-        <div class="feature col" align="center">
-            <img width="150" height="150" src="<c:url value="/resources/images/discount.png"></c:url>">
-            <h4 class="text-body-emphasis" align="center">Скидки за повторное обращение</h4>
-            <p align="center" font-size="15px">Каждый клиент, который обратился к нам автоматически становится
-                участником бонусной программы</p>
-        </div>
-
-        <div class="feature col" align="center">
-            <img width="150" height="150" src="<c:url value="/resources/images/good-car.png"></c:url>"
-                 alt="Моя картинка">
-            <h4 class="text-body-emphasis" align="center">Без ограничения пробега</h4>
-            <p align="center" font-size="15px">Катайся на автомобиле, скололько угодно.<br> Никаких дополинтельных оплат
-                за перепробег</p>
-        </div>
-
-        <div class="feature col" align="center">
-            <img width="150" height="150" src="<c:url value="/resources/images/trip.png"></c:url>"
-                 alt="Моя картинка">
-            <h4 class="text-body-emphasis" align="center">Гарантия самой низкой цены</h4>
-            <p align="center" font-size="15px">Если вы найдете цену на аналогичный автомобиль в другом прокате ниже - мы
-                сделаем еще дешевле!</p>
-        </div>
-    </div>
-</div>
-
+<br>
 
 <div class="container">
-    <hr>
-    <br>
-    <br>
-    <h1 align="center">Спецпредложения</h1>
-    <br>
-    <br>
+    <div class="row">
+        <div class="col-9">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1b4ab8506ab88e5b36401dcde2a444b16920184674fb958473e09ee1e0c618c9&amp;width=900&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        <div class="col-3">
+            <h2>Витебск</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            </svg>
+            <a href="tel:+375298954739" style="color: black">+ 375 29 895-47-39</a>
+            <br>
+            <br>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+                <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0z"/>
+            </svg>
+            <a>Время работы с 8:00 до 19:00</a>
+
+            <br>
+            <br>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+            </svg>
+            <a>г. Витебск, пр-т Черняховского 35</a>
+        </div>
+    </div>
 </div>
 
-<!-- CAROUSEL-->
-<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"
-                aria-current="true"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-    </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="<c:url value="/resources/images/carousel1.jpg"></c:url>">
-            <div class="container">
-                <div class="carousel-caption text-start">
-                    <h1>Мойка авто в подарок при прокате от 3х суток</h1>
+
+<!--ALBUM-->
+<div class="album py-5 bg-body-tertiary">
+    <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="<c:url value="/resources/images/album1.jpg"></c:url> ">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="<c:url value="/resources/images/album2.jpg"></c:url> ">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="<c:url value="/resources/images/album3.jpg"></c:url> ">
                 </div>
             </div>
         </div>
-
-        <div class="carousel-item">
-            <img src="<c:url value="/resources/images/carousel2.jpg"></c:url>">
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>Возможен выезд за пределы РБ</h1>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="<c:url value="/resources/images/carousel3.jpg"></c:url> ">
-            <div class="container">
-                <div class="carousel-caption text-end">
-                    <h1>Онлайн оформление договора и доставка авто по адресу.</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
-
-<!--COMMENTS-->
-<div class="container" align="center">
-    <br>
-    <br>
-    <h1>Отзывы</h1>
-    <br>
-    <div class="container marketing">
-        <div class="row">
-            <div class="col-lg-4">
-                <img class="rounded-circle" src="<c:url value="/resources/images/comments1.jpg"></c:url> ">
-                <h2 class="fw-normal">Владислав Симоненко</h2>
-                <p>"Удобно и выгодно, когда своя машина на ремонте.
-                    Персонал приветливый. В дороге никаких
-                    казусов не произошло, хоть и накрутил порядка 3000 км.Буду обращаться и дальше."
-                </p>
-            </div><!-- /.col-lg-4 -->
-
-            <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
-                     preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                </svg>
-                <h2 class="fw-normal">Heading</h2>
-                <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second
-                    column.</p>
-            </div><!-- /.col-lg-4 -->
-
-            <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
-                     preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                </svg>
-                <h2 class="fw-normal">Heading</h2>
-                <p>And lastly this, the third column of representative placeholder content.</p>
-            </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
     </div>
 </div>
+<!--END OF ALBUM-->
 
 
-<div class="container">
-    <hr>
-    <h1 align="center"> Аренда авто без залога и стажа вождения – Auto.by</h1>
-    <br>
-</div>
+
 
 <!-- FOOTER-->
 <div class="container">
