@@ -61,7 +61,7 @@
 
 
 <c:forEach var="cars" items="${allCars}">
-    ${cars.brand}
+    <a href="/cars/${cars.id}">${cars.brand}</a>
 </c:forEach>
 
 <!--FOOTER-->

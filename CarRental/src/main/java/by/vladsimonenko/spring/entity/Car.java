@@ -3,7 +3,7 @@ package by.vladsimonenko.spring.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "car")
+@Table(name = "Car")
 public class Car {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,9 +13,9 @@ public class Car {
     private String brand;
     @Column(name = "description")
     private String description;
-    @Column(name = "path")
+    @Column(name = "pathToImage")
     private String pathToImage;
-    
+
     public Car() {
     }
 
@@ -24,7 +24,6 @@ public class Car {
         this.description = description;
         this.pathToImage = pathToImage;
     }
-
 
     public int getId() {
         return id;

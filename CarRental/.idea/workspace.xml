@@ -10,18 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b58108b3-d5bc-4102-92fd-8bdc97c3e4ae" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/config/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/config/MyConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/controller/MyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/controller/MyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/controller/MyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/terms.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/terms.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/images/a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/cars.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/cars.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,30 +50,30 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/VLAD/SpringProjectCarRental/CarRental",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "spring.configuration.checksum": "d7b83ec1efc880a578bfa5c1b92a9e39",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/VLAD/SpringProjectCarRental/CarRental&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d7b83ec1efc880a578bfa5c1b92a9e39&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\VLAD\SpringProjectCarRental\CarRental\src\main\webapp\resources" />
@@ -106,7 +101,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="dd11be82-cc5a-421a-a5a4-9a15506e0e3b" />
+        <option name="BASE_DIRECTORY_NAME" value="5971d95e-f34d-47a4-88bb-671371e05db6" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -114,7 +109,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="57979" />
+        <option name="DEBUG_PORT" value="63389" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -206,7 +201,18 @@
       <workItem from="1692118370235" duration="104000" />
       <workItem from="1692163138740" duration="4485000" />
       <workItem from="1692345981535" duration="45000" />
-      <workItem from="1692599426337" duration="5737000" />
+      <workItem from="1692599426337" duration="6762000" />
+      <workItem from="1692611847873" duration="17000" />
+      <workItem from="1692611875249" duration="23000" />
+      <workItem from="1692614172837" duration="15000" />
+      <workItem from="1692615526536" duration="55000" />
+      <workItem from="1692638443859" duration="180000" />
+      <workItem from="1692687872050" duration="685000" />
+      <workItem from="1692698768057" duration="547000" />
+      <workItem from="1692699676976" duration="28000" />
+      <workItem from="1693201428221" duration="10655000" />
+      <workItem from="1693220105354" duration="2046000" />
+      <workItem from="1693223422103" duration="11000" />
     </task>
     <servers />
   </component>
