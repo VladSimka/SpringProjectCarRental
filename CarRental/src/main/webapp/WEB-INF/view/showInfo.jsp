@@ -3,7 +3,7 @@
 <html>
 <body>
 
-${id}
+${currentCar.id}
 
 </body>
 </html>

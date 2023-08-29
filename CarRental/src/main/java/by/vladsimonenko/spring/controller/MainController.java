@@ -13,12 +13,6 @@ import java.util.List;
 
 @Controller
 public class MainController {
-    private CarService carService;
-
-    @Autowired
-    public MainController(CarService carService) {
-        this.carService = carService;
-    }
 
     @GetMapping("/")
     public String mainPage() {
@@ -37,19 +31,9 @@ public class MainController {
         return "contacts";
     }
 
-    @GetMapping("/cars")
-    public String showCars(Model model){
-        List<Car> cars = carService.getAllCars();
-        model.addAttribute("allCars",cars);
-        return "cars";
-    }
-
-    @GetMapping("/cars/{id}")
-    public String showCarInfo(@PathVariable int id,Model model){
-        int showId = id;
-        model.addAttribute("showId",showId);
-        return "showInfo";
-
+    @GetMapping("/promo")
+    public String promo(){
+        return "promo";
     }
 
 }

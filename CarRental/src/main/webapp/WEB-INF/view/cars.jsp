@@ -60,8 +60,27 @@
 </nav>
 
 
-<c:forEach var="cars" items="${allCars}">
-    <a href="/cars/${cars.id}">${cars.brand}</a>
+<div class="container" align="center">
+    <br>
+    <h1>Автопарк Витебска</h1>
+    <br>
+</div>
+
+
+<c:forEach var="car" items="${allCars}">
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2" align="center" style="margin-top: 75px">
+            <h2 class="featurette-heading fw-normal lh-1">${car.brand} ${car.model}</h2>
+            <p class="lead">${car.description}</p>
+            <a href="/cars/${car.id}"><button class="btn btn-primary" type="button">Забронировать</button></a>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                 src="<c:url value="${car.pathToImage}"></c:url>" alt="${car.brand} ${car.model}" width="800"
+                 height="500">
+        </div>
+    </div>
 </c:forEach>
 
 <!--FOOTER-->

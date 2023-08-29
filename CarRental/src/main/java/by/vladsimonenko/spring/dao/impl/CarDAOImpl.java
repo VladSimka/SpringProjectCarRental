@@ -6,6 +6,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+
 import java.util.List;
 
 @Repository
@@ -22,5 +23,12 @@ public class CarDAOImpl implements CarDAO {
         Session session = sessionFactory.getCurrentSession();
         List<Car> allCars = session.createQuery("FROM Car", Car.class).getResultList();
         return allCars;
+    }
+
+    @Override
+    public Car getCarById(int id) {
+        Session session = sessionFactory.getCurrentSession();
+        Car currentCar = session.get(Car.class, id);
+        return currentCar;
     }
 }

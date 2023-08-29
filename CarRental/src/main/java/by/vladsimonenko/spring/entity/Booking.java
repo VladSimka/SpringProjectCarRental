@@ -4,8 +4,8 @@ import jakarta.persistence.*;
 
 import java.time.LocalTime;
 @Entity
-@Table(name = "order")
-public class Order {
+@Table(name = "booking")
+public class Booking {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -22,19 +22,22 @@ public class Order {
     private LocalTime startDate;
     @Column(name = "price")
     private double price;
-    @Column(name = "accepted")
-    boolean accepted;
+    @Column(name = "start_accepted")
+    boolean startAccepted;
+    @Column(name = "end_accepted")
+    boolean endAccepted;
 
-    public Order() {
+    public Booking() {
     }
 
-    public Order(Client client, int hours, Car car, LocalTime startDate, double price, boolean accepted) {
+    public Booking(Client client, int hours, Car car, LocalTime startDate, double price, boolean startAccepted, boolean endAccepted) {
         this.client = client;
         this.hours = hours;
         this.car = car;
         this.startDate = startDate;
         this.price = price;
-        this.accepted = accepted;
+        this.startAccepted = startAccepted;
+        this.endAccepted = endAccepted;
     }
 
     public int getId() {
@@ -85,11 +88,19 @@ public class Order {
         this.price = price;
     }
 
-    public boolean isAccepted() {
-        return accepted;
+    public boolean isStartAccepted() {
+        return startAccepted;
     }
 
-    public void setAccepted(boolean accepted) {
-        this.accepted = accepted;
+    public void setStartAccepted(boolean startAccepted) {
+        this.startAccepted = startAccepted;
+    }
+
+    public boolean isEndAccepted() {
+        return endAccepted;
+    }
+
+    public void setEndAccepted(boolean endAccepted) {
+        this.endAccepted = endAccepted;
     }
 }

@@ -37,13 +37,13 @@ public class MySecurityConfig {
                                     .usernameParameter("username")
                                     .passwordParameter("password")
                                     .permitAll()
-                                    .defaultSuccessUrl("/admin")
+                                    .defaultSuccessUrl("/admin/requests")
                                     .failureUrl("/login?error=true");
                         }
                 )
                 .authorizeHttpRequests(authorize -> {
                     authorize
-                            .requestMatchers("/terms").authenticated()
+                            .requestMatchers("/admin/**").authenticated()
                             .anyRequest().permitAll();
                 })
                 .build();

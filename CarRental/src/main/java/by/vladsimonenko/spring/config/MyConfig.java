@@ -1,6 +1,5 @@
 package by.vladsimonenko.spring.config;
 
-
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -15,7 +14,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
-
 import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
 import java.util.Properties;
@@ -45,6 +43,7 @@ public class MyConfig implements WebMvcConfigurer {
             dataSource.setJdbcUrl("jdbc:mysql://127.0.0.1:3306/car_rental_db?useSSL=false");
             dataSource.setUser("bestuser");
             dataSource.setPassword("bestuser");
+            logger.info("data source successfully created");
         } catch (PropertyVetoException e) {
             logger.error(e.getMessage());
         }
