@@ -216,7 +216,7 @@
         </div>
 
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-secondary" href="#">
+            <li class="ms-3"><a class="text-body-secondary" href="/mail">
                 <svg class="bi" width="24" height="24">
                     <use xlink:href="#twitter"></use>
                 </svg>

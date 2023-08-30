@@ -9,20 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b58108b3-d5bc-4102-92fd-8bdc97c3e4ae" name="Changes" comment="">
+    <list default="true" id="b58108b3-d5bc-4102-92fd-8bdc97c3e4ae" name="Changes" comment="add cars view">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/config/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/config/MyConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/config/MySecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/config/MySecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/config/MyWebInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/config/MyWebInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/dao/CarDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/dao/CarDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/dao/impl/CarDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/dao/impl/CarDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/service/CarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/service/impl/CarServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/service/impl/CarServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/createTable.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/createTable.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/cars.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/cars.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/showInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/showInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/main.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +27,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -56,31 +50,31 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "D:/VLAD/SpringProjectCarRental/CarRental",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "spring.configuration.checksum": "d7b83ec1efc880a578bfa5c1b92a9e39",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/VLAD/SpringProjectCarRental/CarRental&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d7b83ec1efc880a578bfa5c1b92a9e39&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\VLAD\SpringProjectCarRental\CarRental\src\main\webapp\resources" />
@@ -187,6 +181,9 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="showFilesets" value="false" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b58108b3-d5bc-4102-92fd-8bdc97c3e4ae" name="Changes" comment="" />
@@ -222,11 +219,47 @@
       <workItem from="1693223422103" duration="11000" />
       <workItem from="1693235886111" duration="651000" />
       <workItem from="1693244012622" duration="218000" />
-      <workItem from="1693307904242" duration="4921000" />
+      <workItem from="1693307904242" duration="5086000" />
+      <workItem from="1693389678800" duration="4987000" />
     </task>
+    <task id="LOCAL-00001" summary="add cars view">
+      <option name="closed" value="true" />
+      <created>1693318740277</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693318740277</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add cars view" />
+    <option name="LAST_COMMIT_MESSAGE" value="add cars view" />
   </component>
 </project>

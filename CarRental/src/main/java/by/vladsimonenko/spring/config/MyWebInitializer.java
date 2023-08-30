@@ -8,7 +8,7 @@ public class MyWebInitializer extends AbstractAnnotationConfigDispatcherServletI
     }
 
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[]{MyConfig.class};
+        return new Class[]{MyConfig.class, MailConfig.class};
     }
 
     protected String[] getServletMappings() {
