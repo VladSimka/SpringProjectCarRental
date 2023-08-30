@@ -67,4 +67,16 @@ public class Car {
     public void setPathToImage(String pathToImage) {
         this.pathToImage = pathToImage;
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Car{");
+        sb.append("id=").append(id);
+        sb.append(", brand='").append(brand).append('\'');
+        sb.append(", model='").append(model).append('\'');
+        sb.append(", description='").append(description).append('\'');
+        sb.append(", pathToImage='").append(pathToImage).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 }

@@ -1,6 +1,9 @@
 package by.vladsimonenko.spring.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name = "client")
@@ -10,14 +13,21 @@ public class Client {
     @Column(name = "id")
     private int id;
     @Column(name = "name")
+    @Size(min = 2,message = "имя должно содержать как минимум 2 символа")
+    @NotBlank(message = "имя не должно быть пустым")
     private String name;
     @Column(name = "surname")
+    @Size(min = 2,message = "фамилия должно содержать как минимум 2 символа")
+    @NotBlank(message = "фамилия не должна быть пустой")
     private String surname;
     @Column(name = "passport_series")
+    @Pattern(regexp = "[A-Z]{2}",message = "серия паспорта состоит из двух заглавных букв")
     private String passportSeries;
     @Column(name = "passport_id")
+    @Pattern(regexp = "\\d{7}",message = "номер паспорта состоит из 7 цифр")
     private String passportId;
     @Column(name = "gmail")
+    @Pattern(regexp = "\\b[A-Za-z0-9._%+-]+@gmail\\.com\\b",message = "некорректный адрес электронной почты")
     private String gmail;
 
     public Client() {
@@ -77,5 +87,18 @@ public class Client {
 
     public void setGmail(String gmail) {
         this.gmail = gmail;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Client{");
+        sb.append("id=").append(id);
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", surname='").append(surname).append('\'');
+        sb.append(", passportSeries='").append(passportSeries).append('\'');
+        sb.append(", passportId='").append(passportId).append('\'');
+        sb.append(", gmail='").append(gmail).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }

@@ -1,5 +1,6 @@
 package by.vladsimonenko.spring.service.impl;
 
+import by.vladsimonenko.spring.entity.Booking;
 import by.vladsimonenko.spring.service.MailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
@@ -31,12 +32,19 @@ public class MailServiceImpl implements MailService {
     }
 
     @Override
-    public void sendMailRefusalRental() {
+    public void sendMailRefusalRental(Booking booking) {
+        String to = booking.getClient().getGmail();
+        SimpleMailMessage message = new SimpleMailMessage();
+        message.setTo(to);
+        message.setFrom(ADMIN_MAIL);
+
 
     }
 
     @Override
-    public void sendMailConfirmingRental() {
+    public void sendMailConfirmingRental(Booking booking) {
 
     }
+
+
 }

@@ -1,6 +1,8 @@
 package by.vladsimonenko.spring.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.Size;
 
 import java.time.LocalTime;
 @Entity
@@ -12,6 +14,7 @@ public class Booking {
     private int id;
     @ManyToOne
     @JoinColumn(name = "client_id")
+    @Valid
     private Client client;
     @Column(name = "hours")
     private int hours;
@@ -22,6 +25,8 @@ public class Booking {
     private LocalTime startDate;
     @Column(name = "price")
     private double price;
+
+    private String ex;
     @Column(name = "start_accepted")
     boolean startAccepted;
     @Column(name = "end_accepted")
@@ -102,5 +107,28 @@ public class Booking {
 
     public void setEndAccepted(boolean endAccepted) {
         this.endAccepted = endAccepted;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Booking{");
+        sb.append("id=").append(id);
+        sb.append(", client=").append(client);
+        sb.append(", hours=").append(hours);
+        sb.append(", car=").append(car);
+        sb.append(", startDate=").append(startDate);
+        sb.append(", price=").append(price);
+        sb.append(", startAccepted=").append(startAccepted);
+        sb.append(", endAccepted=").append(endAccepted);
+        sb.append('}');
+        return sb.toString();
+    }
+
+    public String getEx() {
+        return ex;
+    }
+
+    public void setEx(String ex) {
+        this.ex = ex;
     }
 }

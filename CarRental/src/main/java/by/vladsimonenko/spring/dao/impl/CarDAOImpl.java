@@ -29,6 +29,7 @@ public class CarDAOImpl implements CarDAO {
     public Car getCarById(int id) {
         Session session = sessionFactory.getCurrentSession();
         Car currentCar = session.get(Car.class, id);
+        System.out.println(currentCar);
         return currentCar;
     }
 }
