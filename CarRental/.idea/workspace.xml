@@ -12,13 +12,14 @@
     <list default="true" id="b58108b3-d5bc-4102-92fd-8bdc97c3e4ae" name="Changes" comment="add cars view">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/controller/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/dao/impl/CarDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/dao/impl/CarDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/dao/ClientDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/dao/ClientDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/Booking.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/service/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/service/MailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/service/impl/MailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/service/impl/MailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/createTable.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/createTable.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/CreditCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/insertCars.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/insertCars.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/order.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/payment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/payment.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,10 +29,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
         <option value="TestNG Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -91,6 +92,9 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="by.vladsimonenko.spring.dao" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="by.vladsimonenko.spring.dao.impl" />
@@ -235,7 +239,9 @@
       <workItem from="1693389678800" duration="4987000" />
       <workItem from="1693403313477" duration="6114000" />
       <workItem from="1693410779755" duration="4107000" />
-      <workItem from="1693416227493" duration="1309000" />
+      <workItem from="1693416227493" duration="2049000" />
+      <workItem from="1693459985589" duration="12584000" />
+      <workItem from="1693482913467" duration="1159000" />
     </task>
     <task id="LOCAL-00001" summary="add cars view">
       <option name="closed" value="true" />
@@ -293,7 +299,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

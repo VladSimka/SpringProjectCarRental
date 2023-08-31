@@ -20,7 +20,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="<c:url value="/resources/images/favicon-16x16.png"></c:url>">
     <link rel="manifest" href="<c:url value="/resources/webmanifest/site.webmanifest"></c:url>">
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -129,57 +129,54 @@
         </div>
 
 
+        ${newBooking}
+
         <div class="col-md">
-            <h4 class="mb-3" ${newBooking.car=currentCar}${newBooking.client=client}>Billing address</h4>
+            <h4 class="mb-3">Billing address</h4>
             <form:form action="/cars/${newBooking.car.id}/payment" modelAttribute="newBooking" method="get">
-                <div class="row g-3">
-                    <div class="col-sm-6">
-                        <label for="name" class="form-label">Имя</label>
-                        <form:input class="form-control" path="client.name" id="name"/>
-                        <form:errors path="client.name"/>
-                    </div>
+            <div class="row g-3">
+                <div class="col-sm-6">
+                    <label for="name" class="form-label">Имя</label>
+                    <form:input class="form-control" path="client.name" id="name"/>
+                    <form:errors path="client.name"/>
+                </div>
 
-                    <div class="col-sm-6">
-                        <label for="surname" class="form-label">Фамилия</label>
-                        <form:input class="form-control" path="client.surname" id="surname"/>
-                        <form:errors path="client.surname"/>
-                    </div>
+                <div class="col-sm-6">
+                    <label for="surname" class="form-label">Фамилия</label>
+                    <form:input class="form-control" path="client.surname" id="surname"/>
+                    <form:errors path="client.surname"/>
+                </div>
 
-                    <div class="col-sm-6">
-                        <label for="passport_series" class="form-label">Серия паспорта</label>
-                        <form:input class="form-control" path="client.passportSeries" id="passport_series"/>
-                        <form:errors  path="client.passportSeries"/>
-                    </div>
-                    <div class="col-sm-6">
-                        <label for="passport_id" class="form-label">Номер паспорта</label>
-                        <form:input class="form-control" path="client.passportId" id="passport_id"/>
-                        <form:errors path="client.passportId"/>
-                    </div>
+                <div class="col-sm-6">
+                    <label for="passport_series" class="form-label">Серия паспорта</label>
+                    <form:input class="form-control" path="client.passportSeries" id="passport_series"/>
+                    <form:errors path="client.passportSeries"/>
+                </div>
+                <div class="col-sm-6">
+                    <label for="passport_id" class="form-label">Номер паспорта</label>
+                    <form:input class="form-control" path="client.passportId" id="passport_id"/>
+                    <form:errors path="client.passportId"/>
+                </div>
+
+                <div class="col-12">
+                    <label for="gmail" class="form-label">Gmail</label>
+                    <form:input class="form-control" path="client.gmail" id="gmail"/>
+                    <form:errors path="client.gmail"/>
+                </div>
+
+                <div class="col-md-5">
+                    <label for="hours" class="form-label">Количество часов для аренды</label>
+                    <form:select class="form-select" path="hours" id="hours">
+                        <form:options items="${availableHours.hours}"/>
+                    </form:select>
+                </div>
 
 
-                    <div class="col-12">
-                        <label for="gmail" class="form-label">Gmail</label>
-                        <form:input class="form-control" path="client.gmail" id="gmail"/>
-                        <form:errors  path="client.gmail"/>
-                    </div>
-
-                    <div class="col-12">
-                        <label for="ex" class="form-label">Gmail</label>
-                        <form:input class="form-control" path="ex" id="ex"/>
-                        <form:errors  path="ex"/>
-                    </div>
-                    <div class="col-md-5">
-                        <label for="hours" class="form-label">Количество часов для аренды</label>
-                        <form:select class="form-select" path="hours" id="hours">
-                            <form:options items="${availableHours.hours}"/>
-                        </form:select>
-                    </div>
                 <hr class="my-4">
 
-
                 <button class="w-100 btn btn-primary btn-lg" type="submit">Перейти к оплате</button>
-            </form:form>
-        </div>
+                </form:form>
+            </div>
 
     </main>
 

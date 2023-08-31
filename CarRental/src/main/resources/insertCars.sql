@@ -22,3 +22,7 @@ VALUES ('Renault', 'Logan',
        ('', '',
         '',
         '/resources/images/renault_logan.png'),
+
+SELECT *
+FROM car_rental_db.booking
+WHERE TIMESTAMPDIFF(HOUR, start_date, NOW()) = 15;

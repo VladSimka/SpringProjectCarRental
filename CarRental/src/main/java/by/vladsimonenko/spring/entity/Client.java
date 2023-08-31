@@ -5,6 +5,8 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
+import java.util.Objects;
+
 @Entity
 @Table(name = "client")
 public class Client {
@@ -87,6 +89,31 @@ public class Client {
 
     public void setGmail(String gmail) {
         this.gmail = gmail;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Client client = (Client) o;
+
+        if (!Objects.equals(name, client.name)) return false;
+        if (!Objects.equals(surname, client.surname)) return false;
+        if (!Objects.equals(passportSeries, client.passportSeries))
+            return false;
+        if (!Objects.equals(passportId, client.passportId)) return false;
+        return Objects.equals(gmail, client.gmail);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = name != null ? name.hashCode() : 0;
+        result = 31 * result + (surname != null ? surname.hashCode() : 0);
+        result = 31 * result + (passportSeries != null ? passportSeries.hashCode() : 0);
+        result = 31 * result + (passportId != null ? passportId.hashCode() : 0);
+        result = 31 * result + (gmail != null ? gmail.hashCode() : 0);
+        return result;
     }
 
     @Override

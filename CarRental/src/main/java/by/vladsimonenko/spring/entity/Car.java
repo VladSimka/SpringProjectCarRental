@@ -2,6 +2,8 @@ package by.vladsimonenko.spring.entity;
 
 import jakarta.persistence.*;
 
+import java.util.Objects;
+
 @Entity
 @Table(name = "car")
 public class Car {
@@ -66,6 +68,28 @@ public class Car {
 
     public void setPathToImage(String pathToImage) {
         this.pathToImage = pathToImage;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Car car = (Car) o;
+
+        if (!Objects.equals(brand, car.brand)) return false;
+        if (!Objects.equals(model, car.model)) return false;
+        if (!Objects.equals(description, car.description)) return false;
+        return Objects.equals(pathToImage, car.pathToImage);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = brand != null ? brand.hashCode() : 0;
+        result = 31 * result + (model != null ? model.hashCode() : 0);
+        result = 31 * result + (description != null ? description.hashCode() : 0);
+        result = 31 * result + (pathToImage != null ? pathToImage.hashCode() : 0);
+        return result;
     }
 
     @Override

@@ -3,7 +3,7 @@ package by.vladsimonenko.spring.entity;
 import jakarta.validation.constraints.Pattern;
 
 public class CreditCard {
-    @Pattern(regexp = "^(?:\\\\d{4}[- ]){3}\\\\d{4}|\\\\d{16}$",message = "ожидается формат ХХХХ-ХХХХ-ХХХХ-ХХХХ")
+    @Pattern(regexp = "^(?:\\d{4}[- ]){3}\\d{4}|\\d{16}$",message = "ожидается формат ХХХХ-ХХХХ-ХХХХ-ХХХХ")
     String number;
     @Pattern(regexp = "(0[1-9]|1[0-2])/(2[3-9])", message = "ожидается формат XX/XX")
     String expiration;
