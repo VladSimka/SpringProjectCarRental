@@ -43,7 +43,17 @@ public class MailServiceImpl implements MailService {
 
     @Override
     public void sendMailConfirmingRental(Booking booking) {
+        String message = "Добрый день, " + booking.getClient().getName() + " " +
+                booking.getClient().getSurname() + "." +
+                " Ваша заявка на аренду " + booking.getCar().getBrand()
+                + " " + booking.getCar().getModel() + " одобрена.";
+        SimpleMailMessage mailMessage = new SimpleMailMessage();
+        mailMessage.setFrom(ADMIN_MAIL);
+        mailMessage.setTo(booking.getClient().getGmail());
 
+        mailMessage.setSubject("Auto.by");
+        mailMessage.setText(message);
+        javaMailSender.send(mailMessage);
     }
 
 

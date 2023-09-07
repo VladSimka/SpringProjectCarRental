@@ -11,15 +11,14 @@
   <component name="ChangeListManager">
     <list default="true" id="b58108b3-d5bc-4102-92fd-8bdc97c3e4ae" name="Changes" comment="add cars view">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/controller/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/dao/ClientDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/dao/ClientDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/entity/CreditCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/insertCars.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/insertCars.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/order.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/payment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/payment.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/config/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/config/MyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/dao/BookingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/dao/BookingDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/dao/impl/BookingDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/dao/impl/BookingDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/service/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/service/BookingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/service/impl/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/service/impl/BookingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/service/impl/MailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/service/impl/MailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/requests.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,10 +28,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="TestNG Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -108,7 +107,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat 10.1.11" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.11" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 10 1 11" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10 1 11" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="CarRental:war exploded">
@@ -118,7 +117,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="5971d95e-f34d-47a4-88bb-671371e05db6" />
+        <option name="BASE_DIRECTORY_NAME" value="6d502871-6195-481f-8719-379381576b75" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -126,7 +125,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="63389" />
+        <option name="DEBUG_PORT" value="56128" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -242,6 +241,14 @@
       <workItem from="1693416227493" duration="2049000" />
       <workItem from="1693459985589" duration="12584000" />
       <workItem from="1693482913467" duration="1159000" />
+      <workItem from="1693502579498" duration="845000" />
+      <workItem from="1693586679540" duration="13000" />
+      <workItem from="1693589655348" duration="1815000" />
+      <workItem from="1693899057646" duration="135000" />
+      <workItem from="1693900010172" duration="123000" />
+      <workItem from="1693900287829" duration="20000" />
+      <workItem from="1694068706343" duration="6926000" />
+      <workItem from="1694077175705" duration="713000" />
     </task>
     <task id="LOCAL-00001" summary="add cars view">
       <option name="closed" value="true" />

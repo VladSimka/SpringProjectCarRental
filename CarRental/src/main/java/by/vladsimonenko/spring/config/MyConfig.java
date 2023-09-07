@@ -1,6 +1,7 @@
 package by.vladsimonenko.spring.config;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
+import jakarta.servlet.ServletContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.context.annotation.Bean;
@@ -9,8 +10,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.web.filter.HiddenHttpMethodFilter;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
@@ -23,7 +26,7 @@ import java.util.Properties;
 @EnableWebMvc
 @EnableTransactionManagement
 public class MyConfig implements WebMvcConfigurer {
-    Logger logger = LogManager.getLogger();
+    static Logger logger = LogManager.getLogger(MyConfig.class);
 
     @Bean
     public ViewResolver viewResolver() {
