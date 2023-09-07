@@ -8,18 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class MainController {
-    MailService mailService;
-
-    @Autowired
-    public MainController(MailService mailService) {
-        this.mailService = mailService;
-    }
-
-    @GetMapping("/mail")
-    public String mail(){
-        mailService.sendTestMail();
-        return "mail";
-    }
 
     @GetMapping("/")
     public String mainPage() {

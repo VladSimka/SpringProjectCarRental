@@ -18,6 +18,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="<c:url value="/resources/images/favicon-32x32.png"></c:url>">
     <link rel="icon" type="image/png" sizes="16x16" href="<c:url value="/resources/images/favicon-16x16.png"></c:url>">
     <link rel="manifest" href="<c:url value="/resources/webmanifest/site.webmanifest"></c:url>">
+
 </head>
 <body>
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -60,119 +61,43 @@
 </nav>
 
 <br>
-<div class="container">
-    <h1>Условия проката</h1>
+<div class="container content-justify-center" align="center">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 align="center">Оплата прошла успешно!</h1>
+    <h1 align="center"> В ближайшее время вы получите письмо на gmail.</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="${pageContext.request.contextPath}/" style="align:center">
+        <button class="w-50 btn btn-primary btn-lg" type="submit">На главную</button>
+    </a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
 </div>
-<br>
-<br>
-<div class="container">
-    <div class="dropdown" style="background-color:aliceblue">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
-           data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 30px; width: 100%">
-            Документы
-        </a>
-        <ul class="dropdown-menu" style="font-size:22px;width: 100%">
-            <li>1. Паспорт</li>
-            <li>2. Водительское удостоверение</li>
-        </ul>
-    </div>
-</div>
-<br>
-<br>
-<br>
-<div class="container">
-    <div class="dropdown" style="background-color:aliceblue">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
-           data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 30px; width: 100%">
-            Выдача и возврат автомобиля
-        </a>
-        <ul class="dropdown-menu" style=" font-size:22px;width: 100%">
-            <li>1. Выдача автомобиля при первоначальном обращении осуществляется в офисе компании с 8.00 до 20.00.</li>
-            <li>2. Постоянным клиентам можно заказывать услугу авто к подъезду.</li>
-            <li>3. Возврат авто осуществляется в офисе компании в рабочее время с 8.00 до 20.00</li>
-            <li>4. Возврат автомобиля осуществляется в то время, когда он был выдан, увеличенное на количество суток.
-                Если Вы сдали авто ранее, то каждые неполные сутки считаются как за полные.
-            </li>
-            <li>5. Возврат автомобиля допускается с опозданием до 30 минут, впоследствии за каждый час просрочки
-                взимается плата 10% максимальной суточной стоимости проката за за данный автомобиль.
-            </li>
-        </ul>
-    </div>
-</div>
-<br>
-<br>
-<br>
-<div class="container">
-    <div class="dropdown" style="background-color:aliceblue">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
-           data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 30px; width: 100%">
-            Условия оплаты
-        </a>
-        <ul class="dropdown-menu" style=" font-size:22px;width: 100%">
-            <li>1. Оплата допускается только в белорусских рублях по условиям полной предоплаты.</li>
-            <li>2. В случае возврата авто в грязном виде взимается плата 20,00 руб.</li>
-        </ul>
-    </div>
-</div>
-<br>
-<br>
-<br>
-<div class="container">
-    <div class="dropdown" style="background-color:aliceblue">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
-           data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 30px; width: 100%">
-            Ваша ответственность при ДТП
-        </a>
-        <ul class="dropdown-menu" style=" font-size:22px;width: 100%">
-            <li>1. Во всех случаях ДТП (когда вы виновник или вы пострадавший) вы не несете ответственность, только за
-                время простоя автомобиля, когда он будет находиться в ремонте, а также за ущерб, не покрытый страховой
-                компанией (но как правило, таких случаев не бывало). Основной вашей обязанностью является сообщить в
-                компанию о случае и засвидетельствовать факт ДТП в ГАИ. В случае, если Вы скроетесь с места происшествия
-                Вы рискуете лишиться прав, а также несете полную материальную ответственность за ущерб нанесенный
-                автомобилю.
-            </li>
-            <li>2. Вы несете 100% ущерба за нанесенный ущерб автомобилю, если во время происшествия вы находились в
-                состоянии алкогольного, токсического или наркотического опьянения.
-            </li>
-        </ul>
-    </div>
-</div>
-<br>
-<br>
-<br>
-<div class="container">
-    <div class="dropdown" style="background-color:aliceblue">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
-           data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 30px; width: 100%">
-            Дополнительно
-        </a>
-        <ul class="dropdown-menu" style=" font-size:22px;width: 100%">
-            <li>1. ТС предоставляется Арендатору для эксплуатации по дорогам общего пользования, имеющим твердое
-                дорожное покрытие (асфальт, бетон).
-            </li>
-            <li>2. ТС предоставляется в аренду в технически исправном состоянии, что подтверждается сертификатом
-                технического осмотра и в чистом виде. Все наши автомобили укомплектованы знаком аварийной остановки,
-                аптечкой, огнетушителем, запасным колесом, домкратом, баллонным ключом, автомагнитолой.
-            </li>
-        </ul>
-    </div>
-</div>
-<br>
-<br>
-<br>
-<br>
 <br>
 <!--FOOTER-->
 <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
             <a href="/login" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                <img class="bi" width="30" height="24" src="<c:url value="/resources/images/favicon-32x32.png"></c:url> ">
+                <img class="bi" width="30" height="24"
+                     src="<c:url value="/resources/images/favicon-32x32.png"></c:url> ">
             </a>
             <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
         </div>
 
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            </a></li>
             <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/vlad_simonenko_27/">
                 <svg class="bi" width="24" height="24">
                     <use xlink:href="#instagram"></use>

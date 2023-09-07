@@ -9,16 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b58108b3-d5bc-4102-92fd-8bdc97c3e4ae" name="Changes" comment="add cars view">
+    <list default="true" id="b58108b3-d5bc-4102-92fd-8bdc97c3e4ae" name="Changes" comment="start doing admin panel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/config/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/config/MyConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/dao/BookingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/dao/BookingDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/dao/impl/BookingDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/dao/impl/BookingDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/service/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/service/BookingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/service/impl/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/service/impl/BookingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/service/impl/MailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/service/impl/MailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin/requests.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/controller/CarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/vladsimonenko/spring/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/cars.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/cars.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/contacts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/contacts.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/mail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/order.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/payment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/payment.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/showInfo.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/terms.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/terms.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +250,8 @@
       <workItem from="1693900010172" duration="123000" />
       <workItem from="1693900287829" duration="20000" />
       <workItem from="1694068706343" duration="6926000" />
-      <workItem from="1694077175705" duration="713000" />
+      <workItem from="1694077175705" duration="907000" />
+      <workItem from="1694080337744" duration="2501000" />
     </task>
     <task id="LOCAL-00001" summary="add cars view">
       <option name="closed" value="true" />
@@ -258,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693318740277</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="start doing admin panel">
+      <option name="closed" value="true" />
+      <created>1694077918477</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1694077918477</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,6 +331,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add cars view" />
-    <option name="LAST_COMMIT_MESSAGE" value="add cars view" />
+    <MESSAGE value="start doing admin panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="start doing admin panel" />
   </component>
 </project>

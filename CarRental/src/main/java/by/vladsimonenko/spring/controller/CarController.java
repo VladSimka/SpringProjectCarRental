@@ -73,7 +73,7 @@ public class CarController {
     }
 
 
-    @GetMapping("/done")
+    @PostMapping ("/done")
     public String addBooking(Model model, @Valid @ModelAttribute("creditCard") CreditCard creditCard,
                              BindingResult bindingResult) {
 
@@ -81,12 +81,14 @@ public class CarController {
             return "payment";
         }
 
-
         Booking booking = (Booking) model.getAttribute("newBooking");
         booking.setStartDate(new Timestamp(System.currentTimeMillis()));
         clientService.saveClient(booking.getClient());
         bookingService.saveBooking(booking);
-        return "main";
+        model.asMap().remove("newBooking");
+        model.asMap().remove("creditCard");
+
+        return "done";
 
     }
 

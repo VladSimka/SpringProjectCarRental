@@ -122,12 +122,10 @@
 <div class="container">
     <main>
         <div class="py-5 text-center">
-            <h2>Оформление аренды</h2>
+            <h2>Оплата</h2>
             <p class="lead">
-                Вводите свои данные и подтверждайте аренду!
+                Вводите данные карты и подтверждайте оплату!
             </p>
-
-            ${newBooking}
 
             <div class="col-md">
                 <h4 class="mb-3">Цена заказа ${newBooking.price}</h4>
@@ -135,7 +133,7 @@
 
 
             <input type="hidden" value="${newBooking.car.id}" name="carId">
-            <form:form action="/done" modelAttribute="creditCard" cssStyle="align-content:center" method="get">
+            <form:form action="/done" modelAttribute="creditCard" cssStyle="align-content:center" method="post">
                 <div class="row justify-content-center" align="center">
 
                     <div class="col-md-6">

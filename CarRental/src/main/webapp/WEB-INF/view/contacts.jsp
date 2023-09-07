@@ -53,7 +53,7 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="/">Главная</a></li>
                     <li class="nav-item"><a class="nav-link" href="/terms">Условия проката</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Акции</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/promo">Акции</a></li>
                     <li class="nav-item"><a class="nav-link" href="/contacts">Контакты</a></li>
                     <li class="nav-item"><a class="nav-link" href="/cars">Автопарк</a></li>
                 </ul>

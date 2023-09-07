@@ -129,10 +129,8 @@
         </div>
 
 
-        ${newBooking}
 
         <div class="col-md">
-            <h4 class="mb-3">Billing address</h4>
             <form:form action="/cars/${newBooking.car.id}/payment" modelAttribute="newBooking" method="get">
             <div class="row g-3">
                 <div class="col-sm-6">
@@ -181,11 +179,9 @@
     </main>
 
     <footer class="my-5 pt-5 text-body-secondary text-center text-small">
-        <p class="mb-1">© 2017–2023 Company Name</p>
+        <p class="mb-1">© 2017–2023 Auto.by</p>
         <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Privacy</a></li>
-            <li class="list-inline-item"><a href="#">Terms</a></li>
-            <li class="list-inline-item"><a href="#">Support</a></li>
+            <li class="list-inline-item"><a href="/terms">Terms</a></li>
         </ul>
     </footer>
 </div>
