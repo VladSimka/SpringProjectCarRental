@@ -115,10 +115,6 @@
             <artifactId>spring-context-support</artifactId>
             <version>6.0.10</version>
         </dependency>
-
-
-
-
     </dependencies>
     <build>
         <finalName>CarRental</finalName>
