@@ -42,34 +42,51 @@ public class AdminController {
     }
 
     @PostMapping("/admin/requests/delete/{id}")
-    public String refuseRequest(@PathVariable int id,@RequestParam("reason") String reason) {
+    public String refuseRequest(@PathVariable int id, @RequestParam("reason") String reason) {
         Booking booking = bookingService.findBookingById(id);
 
-        mailService.sendMailRefusalRental(booking,reason);
+        mailService.sendMailRefusalRental(booking, reason);
         bookingService.deleteBookingById(id);
         return "redirect:/admin/requests";
     }
 
 
-
     @GetMapping("/admin/active-requests")
     public String activeRequests(Model model) {
-        model.addAttribute("activeRequests",bookingService.findAllActiveBookings());
+        model.addAttribute("activeRequests", bookingService.findAllActiveBookings());
 
         return "admin/active-requests";
     }
 
     @GetMapping("/admin/end-of-requests")
-    public String endOfRequests(Model model){
-        model.addAttribute("endingRequests",bookingService.findAllUnconfirmedForChangeBackBookings());
+    public String endOfRequests(Model model) {
+        model.addAttribute("endingRequests", bookingService.findAllUnconfirmedForChangeBackBookings());
         return "admin/submission";
     }
 
     @PostMapping("/admin/end-of-requests/{id}")
-    public String finishRequest(@PathVariable int id){
+    public String finishRequest(@PathVariable int id) {
         Booking booking = bookingService.findBookingById(id);
         bookingService.changeEndAcceptedById(id, true);
         mailService.sendMailConfirmingEndRental(booking);
+
+        return "redirect:/admin/end-of-requests";
+    }
+
+    @PostMapping("/admin/end-of-requests/scratches/{id}")
+    public String finishRequestWithFineForScratches(@PathVariable int id) {
+        Booking booking = bookingService.findBookingById(id);
+        bookingService.changeEndAcceptedById(id, true);
+        mailService.sendMailConfirmingEndRentalWithScratches(booking);
+
+        return "redirect:/admin/end-of-requests";
+    }
+
+    @PostMapping("/admin/end-of-requests/dirt/{id}")
+    public String finishRequestWithFineForDirt(@PathVariable int id) {
+        Booking booking = bookingService.findBookingById(id);
+        bookingService.changeEndAcceptedById(id, true);
+        mailService.sendMailConfirmingEndRentalWithDirty(booking);
 
         return "redirect:/admin/end-of-requests";
     }

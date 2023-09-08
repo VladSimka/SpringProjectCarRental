@@ -63,5 +63,41 @@ public class MailServiceImpl implements MailService {
         javaMailSender.send(mailMessage);
     }
 
+    @Override
+    public void sendMailConfirmingEndRentalWithScratches(Booking booking) {
+        String message = "Добрый день, " + booking.getClient().getName() + " " +
+                booking.getClient().getSurname() + ". " +
+                "Аренда окончена. " +
+                "На полученной нами машине видны царапины. " +
+                "Вам необходимо выплатить штраф в размере 30р. За " +
+                "Подробностями обращайтесь в кассу. " +
+                "Спасибо, что выбрали нас!";
+        SimpleMailMessage mailMessage = new SimpleMailMessage();
+        mailMessage.setFrom(ADMIN_MAIL);
+        mailMessage.setTo(booking.getClient().getGmail());
+
+        mailMessage.setSubject("Auto.by");
+        mailMessage.setText(message);
+        javaMailSender.send(mailMessage);
+    }
+
+    @Override
+    public void sendMailConfirmingEndRentalWithDirty(Booking booking) {
+        String message = "Добрый день, " + booking.getClient().getName() + " " +
+                booking.getClient().getSurname() + ". " +
+                "Аренда окончена. " +
+                "Полученная нами машина слишком грязная . " +
+                "Вам необходимо выплатить штраф в размере 20р. За " +
+                "Подробностями обращайтесь в кассу. " +
+                "Спасибо, что выбрали нас!";
+        SimpleMailMessage mailMessage = new SimpleMailMessage();
+        mailMessage.setFrom(ADMIN_MAIL);
+        mailMessage.setTo(booking.getClient().getGmail());
+
+        mailMessage.setSubject("Auto.by");
+        mailMessage.setText(message);
+        javaMailSender.send(mailMessage);
+    }
+
 
 }
