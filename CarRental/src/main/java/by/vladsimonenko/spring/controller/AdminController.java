@@ -42,16 +42,15 @@ public class AdminController {
     }
 
     @PostMapping("/admin/requests/delete/{id}")
-    public String refuseRequest(@PathVariable int id) {
+    public String refuseRequest(@PathVariable int id,@RequestParam("reason") String reason) {
+        Booking booking = bookingService.findBookingById(id);
 
+        mailService.sendMailRefusalRental(booking,reason);
         bookingService.deleteBookingById(id);
         return "redirect:/admin/requests";
     }
 
-    @GetMapping("/admin/submission")
-    public String adminSubmission() {
-        return "admin/submission";
-    }
+
 
     @GetMapping("/admin/active-requests")
     public String activeRequests(Model model) {
@@ -59,4 +58,20 @@ public class AdminController {
 
         return "admin/active-requests";
     }
+
+    @GetMapping("/admin/end-of-requests")
+    public String endOfRequests(Model model){
+        model.addAttribute("endingRequests",bookingService.findAllUnconfirmedForChangeBackBookings());
+        return "admin/submission";
+    }
+
+    @PostMapping("/admin/end-of-requests/{id}")
+    public String finishRequest(@PathVariable int id){
+        Booking booking = bookingService.findBookingById(id);
+        bookingService.changeEndAcceptedById(id, true);
+        mailService.sendMailConfirmingEndRental(booking);
+
+        return "redirect:/admin/end-of-requests";
+    }
+
 }

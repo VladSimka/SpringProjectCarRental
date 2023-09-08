@@ -27,15 +27,10 @@
 
 <div class="container">
     <header class="d-flex justify-content-center py-3">
-        <ul class="nav nav-pills justify-content-center">
-            <li class="nav-item">
-                <a href="/admin/requests" class="nav-link bg-primary rounded-pill text-white">Новые заявки</a>
-            </li>
-            <li class="nav-item">
-                <a href="/admin/active-requests" class="nav-link bg-primary rounded-pill text-white">Активные заявки</a>
-            </li>
-            <li class="nav-item">
-                <a href="/admin/end-of-requests" class="nav-link bg-primary rounded-pill text-white">Подтверждение окончания заявки</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/admin/requests" class="nav-link">Новые заявки</a></li>
+            <li class="nav-item"><a href="/admin/active-requests" class="nav-link">Активные заявки</a></li>
+            <li class="nav-item"><a href="/admin/end-of-requests" class="nav-link">Подтверждение окончания заявки</a>
             </li>
         </ul>
     </header>
@@ -51,6 +46,11 @@
                 Заказчик: ${request.client.name} ${request.client.surname},
                 выбранная машина: ${request.car.brand} ${request.car.model},
                 время аренды: ${request.hours} ч., цена аренды: ${request.price} р.
+            </p>
+            <p class="lead">
+                Серия паспорта: ${request.client.passportSeries},
+                номер паспорта: ${request.client.passportId},
+                gmail: ${request.client.gmail}
             </p>
         </div>
     </div>

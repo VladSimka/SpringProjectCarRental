@@ -13,8 +13,12 @@ public interface BookingDAO {
 
     List<Booking> findAllActiveBookings();
 
+    List<Booking> findAllUnconfirmedForChangeBackBookings();
+
     Booking findBookingById(int id);
 
     void changeStartAcceptedById(int id, boolean change);
+
+    void changeEndAcceptedById(int id, boolean change);
 
 }

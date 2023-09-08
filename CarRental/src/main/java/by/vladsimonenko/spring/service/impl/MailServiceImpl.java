@@ -17,28 +17,21 @@ public class MailServiceImpl implements MailService {
         this.javaMailSender = javaMailSender;
     }
 
-    @Override
-    public void sendTestMail() {
-
-        String to = "springcarrental1@gmail.com";
-        SimpleMailMessage msg = new SimpleMailMessage();
-        msg.setTo(to);
-        msg.setFrom(ADMIN_MAIL);
-
-        msg.setSubject("привет ");
-        msg.setText("пытаюсь послать сообщение");
-
-        javaMailSender.send(msg);
-    }
 
     @Override
-    public void sendMailRefusalRental(Booking booking) {
-        String to = booking.getClient().getGmail();
-        SimpleMailMessage message = new SimpleMailMessage();
-        message.setTo(to);
-        message.setFrom(ADMIN_MAIL);
+    public void sendMailRefusalRental(Booking booking, String reason) {
+        String message = "Добрый день, " + booking.getClient().getName() + " " +
+                booking.getClient().getSurname() + "." +
+                " Ваша заявка на аренду " + booking.getCar().getBrand()
+                + " " + booking.getCar().getModel() + " отклонена. " +
+                "Причина: " + reason + "." + " Деньги за плату возвращены Вам на карту.";
+        SimpleMailMessage mailMessage = new SimpleMailMessage();
+        mailMessage.setTo(booking.getClient().getGmail());
+        mailMessage.setFrom(ADMIN_MAIL);
 
-
+        mailMessage.setSubject("Auto.by");
+        mailMessage.setText(message);
+        javaMailSender.send(mailMessage);
     }
 
     @Override
@@ -47,6 +40,20 @@ public class MailServiceImpl implements MailService {
                 booking.getClient().getSurname() + "." +
                 " Ваша заявка на аренду " + booking.getCar().getBrand()
                 + " " + booking.getCar().getModel() + " одобрена.";
+        SimpleMailMessage mailMessage = new SimpleMailMessage();
+        mailMessage.setFrom(ADMIN_MAIL);
+        mailMessage.setTo(booking.getClient().getGmail());
+
+        mailMessage.setSubject("Auto.by");
+        mailMessage.setText(message);
+        javaMailSender.send(mailMessage);
+    }
+
+    @Override
+    public void sendMailConfirmingEndRental(Booking booking) {
+        String message = "Добрый день, " + booking.getClient().getName() + " " +
+                booking.getClient().getSurname() + "." +
+                " Аренда успешно окончена. Спасибо, что выбрали нас!";
         SimpleMailMessage mailMessage = new SimpleMailMessage();
         mailMessage.setFrom(ADMIN_MAIL);
         mailMessage.setTo(booking.getClient().getGmail());

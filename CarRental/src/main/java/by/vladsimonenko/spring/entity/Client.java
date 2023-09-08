@@ -29,7 +29,7 @@ public class Client {
     @Pattern(regexp = "\\d{7}",message = "номер паспорта состоит из 7 цифр")
     private String passportId;
     @Column(name = "gmail")
-    @Pattern(regexp = "\\b[A-Za-z0-9._%+-]+@gmail\\.com\\b",message = "некорректный адрес электронной почты")
+   // @Pattern(regexp = "\\b[A-Za-z0-9._%+-]+@gmail\\.com\\b",message = "некорректный адрес электронной почты")
     private String gmail;
 
     public Client() {

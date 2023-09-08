@@ -4,10 +4,11 @@ import by.vladsimonenko.spring.entity.Booking;
 import by.vladsimonenko.spring.entity.Client;
 
 public interface MailService {
-    void sendTestMail();
 
-    void sendMailRefusalRental(Booking booking);
+    void sendMailRefusalRental(Booking booking,String reason);
 
     void sendMailConfirmingRental(Booking booking);
+
+    void sendMailConfirmingEndRental(Booking booking);
 
 }

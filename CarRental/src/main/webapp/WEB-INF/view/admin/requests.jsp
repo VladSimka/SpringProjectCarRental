@@ -20,7 +20,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="<c:url value="/resources/images/favicon-16x16.png"></c:url>">
     <link rel="manifest" href="<c:url value="/resources/webmanifest/site.webmanifest"></c:url>">
 
-
 </head>
 <body>
 
@@ -51,7 +50,6 @@
                 Серия паспорта: ${request.client.passportSeries},
                 номер паспорта: ${request.client.passportId},
                 gmail: ${request.client.gmail}
-
             </p>
             <div class="mt-auto">
                 <div class="row justify-content-center">
@@ -61,18 +59,24 @@
                             <button type="submit" class="btn btn-success me-3">Принять заявку</button>
                         </form>
                     </div>
-
-                    <div class="col-md-2 text-center">
+                    <div class="col-md-4 text-center">
                         <form action="/admin/requests/delete/${request.id}" method="post">
                             <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-                            <button type="submit" class="btn btn-danger me-3">Отклонить заявку</button>
+                            <div class="input-group">
+                                <button type="submit" class="btn btn-danger">Отклонить заявку</button>
+                                <input type="text" name="reason" class="form-control" placeholder="Причина отказа"
+                                       autocomplete="off" required>
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
+
+
         </div>
     </div>
 </c:forEach>
+
 
 <!-- FOOTER-->
 <footer>
