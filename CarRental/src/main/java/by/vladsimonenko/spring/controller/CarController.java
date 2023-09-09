@@ -63,7 +63,6 @@ public class CarController {
         booking.setCar(currentCar);
         if (bindingResult.hasErrors()) {
             model.addAttribute("availableHours", AvailableHours.getInstance());
-            // model.addAttribute("newBooking", booking);
             return "order";
         } else {
             booking.setPrice(booking.getHours() * 10);
